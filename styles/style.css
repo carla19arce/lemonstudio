@@ -1,0 +1,863 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Oswald:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;700&family=Sriracha&display=swap');
+
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: rgba(209, 170, 245, 0.582);
+}
+
+.text_logo {
+    font-family: 'Monoton', cursive;
+    color: rgb(55, 14, 94);
+    padding-inline: 30px;
+    font-size: 80px;
+    letter-spacing: 5px;
+}
+
+header {
+    background-color: rgba(255, 160, 122, 0.897);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.menu {
+    list-style-type: none;
+    background-color: lightsalmon;
+    padding: 10px;
+}
+
+
+.menu__item {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 10px;
+    padding-top: 60px;
+}
+
+.menu__item a {
+    color: rgb(66, 14, 87);
+    text-decoration: none;
+}
+
+
+.menu__item.active a {
+    text-decoration: underline double;
+}
+
+.bienvenidos h2 {
+    color: blueviolet;
+    background-color: lightsalmon;
+    text-align: center;
+    padding-inline: 60px;
+}
+
+
+.imagenPrincipal {
+    height: 140vh;
+    background-image: url("../images_/portadaindex.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 40px;
+}
+
+h2 {
+    color: rgb(66, 14, 87);
+    background-color: rgba(233, 84, 84, 0.486);
+    text-align: center;
+    padding-inline: 60px;
+}
+
+/* GRID */
+
+.grid {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "item1 item2"
+        "item3 item4";
+    background-color: rgba(209, 170, 245, 0.582);
+    border-radius: 2rem;
+    gap: 2rem;
+}
+
+.grid__item {
+    border-radius: 2rem;
+    background-size: cover;
+    background-position: center center;
+}
+
+.grid__item h5 {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: end;
+    margin-top: 220px;
+    padding-right: 1rem;
+}
+
+.grid__item h4 {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: start;
+    padding-left: 1rem;
+}
+
+.grid__item1 {
+    grid-area: item1;
+    background-image: url("../images_/dibujos/dibus2.jpeg");
+}
+
+.grid__item2 {
+    grid-area: item2;
+    background-image: url("../images_/murales/mural2.jpeg");
+}
+
+.grid__item3 {
+    grid-area: item3;
+    background-image: url("../images_/tatu/tatucora.jpeg");
+}
+
+.grid__item4 {
+    grid-area: item4;
+    background-image: url("../images_/intervenciones/florescampe1.jpeg");
+}
+
+
+/**CARDS**/
+
+.disenos {
+    padding: 6rem;
+    padding-top: 0;
+    display: contents;
+}
+
+.titles {
+    text-align: center;
+}
+
+.titles h2 {
+    background-color: rgba(233, 84, 84, 0.486);
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    flex-direction: row;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.container .card {
+    width: 330px;
+    height: 430px;
+    background-color: rgba(209, 170, 245, 0.733);
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba (0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba (0, 0, 0, 0.2);
+}
+
+.container .card img {
+    width: 330px;
+    height: 220px;
+}
+
+.container .card h4 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.container .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+}
+
+
+
+/*PIE DE PAGINA*/
+
+.piedepagina {
+    background-color: lightsalmon;
+    text-align: center;
+}
+
+.pie_facebook {
+    width: 50px;
+    position: absolute;
+    right: 150px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.pie_whatsapp {
+    width: 50px;
+    position: absolute;
+    right: 80px;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+.pie_email {
+    width: 50px;
+    position: absolute;
+    right: 10px;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+.piedepagina .pie__foot {
+    color: rgb(55, 24, 85);
+}
+
+/*PAGINA TATTOO*/
+
+.portadaTattoo {
+    height: 140vh;
+    background-image: url("../images_/tatu_portada.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio h2 {
+    color: rgb(66, 14, 87);
+    background-color: lightpink;
+    text-align: center;
+    padding-inline: 60px;
+}
+
+.grid__tattoo {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "item1 item3"
+        "item2 item4";
+    background-color: rgba(209, 170, 245, 0.582);
+    border-radius: 2rem;
+    gap: 2rem;
+    width: 100%;
+    min-height: 900px;
+    justify-content: center center;
+}
+
+.tattoo__item h4 {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.tattoo__item {
+    border-radius: 2rem;
+    background-size: cover;
+    background-position: center center;
+}
+
+.tattoo__item1 {
+    grid-area: item1;
+    background-image: url("../images_/tatu/tatuflor.jpeg");
+}
+
+.tattoo__item2 {
+    grid-area: item2;
+    background-image: url("../images_/tatu/tatucora.jpeg");
+}
+
+.tattoo__item3 {
+    grid-area: item3;
+    background-image: url("../images_/tatu/tatuluna.jpeg");
+}
+
+.tattoo__item4 {
+    grid-area: item4;
+    background-image: url("../images_/tatu/tatuvitto_.jpeg");
+}
+
+
+/*PAGINA DISEÑOS*/
+
+.portadadisenos {
+    height: 140vh;
+    background-image: url("../images_/murales_portada.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.murales h2 {
+    color: rgb(66, 14, 87);
+    background-color: rgba(233, 84, 84, 0.486);
+    text-align: center;
+    padding-inline: 60px;
+}
+
+.pinturas h2 {
+    color: rgb(66, 14, 87);
+    background-color: rgba(233, 84, 84, 0.486);
+    text-align: center;
+    padding-inline: 60px;
+}
+
+.intervenciones h2 {
+    color: rgb(66, 14, 87);
+    background-color: rgba(233, 84, 84, 0.486);
+    text-align: center;
+    padding-inline: 60px;
+}
+
+.reciclado h2 {
+    color: rgb(66, 14, 87);
+    background-color: rgba(233, 84, 84, 0.486);
+    text-align: center;
+    padding-inline: 60px;
+}
+/* GRID DISEÑO */
+
+
+.griddiseno {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "item1 item3"
+        "item2 item4";
+    background-color: rgba(209, 170, 245, 0.582);
+    border-radius: 2rem;
+    gap: 2rem;
+    width: 100%;
+    min-height: 900px;
+    justify-content: center center;
+}
+
+.griddiseno_item h4 {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.griddiseno_item {
+    border-radius: 2rem;
+    background-size: cover;
+    background-position: center center;
+}
+
+.gridm__item1 {
+    grid-area: item1;
+    background-image: url("../images_/murales/mural1.jpeg");
+}
+
+.gridm__item2 {
+    grid-area: item2;
+    background-image: url("../images_/murales/mural2.jpeg");
+}
+
+.gridm__item3 {
+    grid-area: item3;
+    background-image: url("../images_/murales/mapang.jpeg");
+}
+
+.gridm__item4 {
+    grid-area: item4;
+    background-image: url("../images_/murales/lotopared.jpeg");
+}
+
+.gridpinturas {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "item1 item3"
+        "item2 item4";
+    background-color: rgba(209, 170, 245, 0.582);
+    border-radius: 2rem;
+    gap: 2rem;
+    width: 100%;
+    min-height: 900px;
+    justify-content: center center;
+}
+
+.gridpinturas_item h4 {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.gridpinturas_item {
+    border-radius: 2rem;
+    background-size: cover;
+    background-position: center center;
+}
+
+.gridp__item1 {
+    grid-area: item1;
+    background-image: url("../images_/dibujos/dibus4.jpeg");
+}
+
+.gridp__item2 {
+    grid-area: item2;
+    background-image: url("../images_/dibujos/dibus.jpeg");
+}
+
+.gridp__item3 {
+    grid-area: item3;
+    background-image: url("../images_/dibujos/dibumostera.jpeg");
+}
+
+.gridp__item4 {
+    grid-area: item4;
+    background-image: url("../images_/dibujos/dibus3.jpeg");
+}
+
+.gridintervenciones {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "item1 item3"
+        "item2 item4";
+    background-color: rgba(209, 170, 245, 0.582);
+    border-radius: 2rem;
+    gap: 2rem;
+    width: 100%;
+    min-height: 900px;
+    justify-content: center center;
+}
+
+.gridintervenciones_item h4 {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.gridintervenciones_item {
+    border-radius: 2rem;
+    background-size: cover;
+    background-position: center center;
+}
+
+.gridin__item1 {
+    grid-area: item1;
+    background-image: url("../images_/intervenciones/campecustom.jpeg");
+}
+
+.gridin__item2 {
+    grid-area: item2;
+    background-image: url("../images_/intervenciones/dibucampe.jpeg");
+}
+
+.gridin__item3 {
+    grid-area: item3;
+    background-image: url("../images_/intervenciones/campeflores.jpeg");
+}
+
+.gridin__item4 {
+    grid-area: item4;
+    background-image: url("../images_/intervenciones/florescampe.jpeg");
+}
+
+.gridreciclado {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "item1 item3"
+        "item2 item4";
+    background-color: rgba(209, 170, 245, 0.582);
+    border-radius: 2rem;
+    gap: 2rem;
+    width: 100%;
+    min-height: 900px;
+    justify-content: center center;
+}
+
+.gridreciclado_item h4 {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.gridreciclado_item {
+    border-radius: 2rem;
+    background-size: cover;
+    background-position: center center;
+}
+
+.gridr__item1 {
+    grid-area: item1;
+    background-image: url("../images_/intervenciones/sillon1.jpeg");
+}
+
+.gridr__item2 {
+    grid-area: item2;
+    background-image: url("../images_/intervenciones/persihoja.jpeg");
+}
+
+.gridr__item3 {
+    grid-area: item3;
+    background-image: url("../images_/intervenciones/ratona.jpeg");
+}
+
+.gridr__item4 {
+    grid-area: item4;
+    background-image: url("../images_/intervenciones/rompecabe.jpeg");
+}
+
+/*BIO*/
+
+.bio {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.fotobio {
+    width: 400px;
+    background-color: darkkhaki;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.biotitulo {
+    font-size: 30px;
+}
+
+.infobio {
+    background-color: burlywood;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    right: 10px;
+    height: 300px;
+    line-height: 1.5;
+}
+
+/*PAGINA CONTACTO*/
+
+.contacto_form {
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: coral;
+    padding-left: 30px;
+}
+
+input {
+    background-color: rgba(182, 173, 51, 0.747);
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(182, 173, 51, 0.747);
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    background-color: rgba(182, 173, 51, 0.747);
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(182, 173, 51, 0.747);
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+}
+
+label {
+    display: block;
+    float: center;
+}
+
+button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: rgba(182, 173, 51, 0.747);
+    border-color: beige;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+    cursor: pointer;
+}
+
+button p {
+    color: blueviolet;
+}
+
+span {
+    color: rgb(182, 143, 143);
+}
+
+.aviso {
+    font-size: 15px;
+    color: rgb(233, 126, 91);
+}
+
+h1 {
+    font-size: 45px;
+    text-align: left;
+    padding-bottom: 20px;
+    color: rgb(233, 126, 91);
+}
+
+h3 {
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: rgb(233, 126, 91);
+}
+
+p {
+    font-size: 14px;
+    color: blueviolet;
+}
+
+::-webkit-input-placeholder {
+    color: blueviolet;
+}
+
+::webkit-textarea-placeholder {
+    color: blueviolet;
+}
+
+.formulario input:focus {
+    outline: 0;
+    border: 1px solid;
+}
+
+.formulario textarea:focus {
+    outline: 0;
+    border: 1px solid;
+}
+
+.infoformulario {
+    font-size: 20px;
+    color: rgb(216, 70, 54);
+    background-color: rgba(216, 190, 152, 0.781);
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+body {
+    background-color: rgba(247, 92, 234, 0.507);
+}
+
+    .hero__header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text_logo {
+        font-size: 2.6rem;
+    }
+    .menu {
+        align-items: flex-start;
+        padding-top: 0rem;
+        padding-bottom: 0.1rem;
+        background-color: rgba(148, 102, 85, 0.281);
+    }
+
+    .imagenPrincipal {
+        
+        max-width: 100%;
+    }
+
+    .grid {
+        padding: 0.5rem; 
+        background-color: rgba(189, 140, 235, 0.733);
+        border-radius: 2rem;
+        gap: 2rem;
+        display: inline;
+    }
+
+    .container {
+        display: inline;
+        gap: 2 rem;
+        }
+
+    .container .card {
+        background-color: rgba(255, 127, 80, 0.76);
+    }
+
+    .piedepagina {
+        display: flex;
+    }
+
+
+    .portadadisenos {
+        background-image: url("../images_/portadaindex.jpeg");
+    }
+
+    .griddiseno {
+        padding: 0.5rem; 
+        background-color: rgba(189, 140, 235, 0.733);
+        border-radius: 2rem;
+        gap: 2rem;
+        display: inline;
+    }
+
+    .griddiseno_item {
+        flex: 1 1 0;
+        height: 300px;
+    }
+
+    .gridpinturas {
+        padding: 0.5rem; 
+        background-color: rgba(189, 140, 235, 0.733);
+        border-radius: 2rem;
+        gap: 2rem;
+        display: inline;
+    }
+
+    .gridpinturas_item {
+        flex: 1 1 0;
+        height: 300px;
+    }
+
+    .gridintervenciones {
+        padding: 0.5rem; 
+        background-color: rgba(189, 140, 235, 0.733);
+        border-radius: 2rem;
+        gap: 2rem;
+        display: inline;
+    }
+
+    .gridintervenciones_item {
+        flex: 1 1 0;
+        height: 300px;
+    }
+
+    .gridreciclado {
+        padding: 0.5rem; 
+        background-color: rgba(189, 140, 235, 0.733);
+        border-radius: 2rem;
+        gap: 2rem;        padding: 0.5rem; 
+        background-color: rgba(189, 140, 235, 0.733);
+        border-radius: 2rem;
+        gap: 2rem;
+        display: inline;
+    }
+
+    .gridreciclado_item {
+        flex: 1 1 0;
+        height: 300px;
+    }
+
+    .portadaTattoo {
+        background-image: url("../images_/portadaindex.jpeg");
+        }
+
+    .grid__tattoo {
+        padding: 0.5rem; 
+        background-color: rgba(189, 140, 235, 0.733);
+        border-radius: 2rem;
+        gap: 2rem;        padding: 0.5rem; 
+        background-color: rgba(189, 140, 235, 0.733);
+        border-radius: 2rem;
+        gap: 2rem;
+        display: inline;
+    }
+
+    .tattoo__item {
+        flex: 1 1 0;
+        height: 300px;
+    }
+
+
+.bio {
+    display: inline;
+}
+
+.fotobio {
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+.infobio {
+    background-color: burlywood;
+    font-size: 1.1rem;
+    padding: 20px;
+    border-radius: 10px;
+    right: 10px;
+    height: 300px;
+    line-height: 1.5;
+    }
+
+    .formulario h1 {
+        font-size: 1.7rem;
+        background-color: rgba(136, 36, 56, 0.747);
+        text-align: center;
+    }
+
+
+    .aviso {
+        color: rgb(161, 79, 236);
+    }
+
+
+
+}

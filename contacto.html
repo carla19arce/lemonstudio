@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<link rel="stylesheet" href="styles/style.css">
+
+<body>
+    <header class="hero__header">
+        <h1 class="text_logo">Lemon Studio</h1>
+        <nav class="menu">
+            <ul>
+                <li class="menu__item active">
+                    <a href="./inicio.html">Inicio</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./disenos.html">Diseños</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./tattoo.html">Tattoo</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./bio.html">Bio</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h2 class="bienvenidos">Bienvenidos</h2>
+    <main>
+        <section class="imagenPrincipal">
+        </section>
+    </main>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario de contacto</title>
+    </head>
+    <div class="formulario">
+        <h1>Formulario de contacto</h1>
+        <p class="infoformulario">Querés realizar un hermoso mural en la pared de tu casa o local, darle una segunda oportunidad a un mueble viejo u objeto, tatuarte o simplemente asesorarte y que charlemos?</p>
+        <h3>Escribime y te respondo a la brevedad</h3>
+        <form action="submeter-formulario.php" method="post">
+            <p>
+                <label for="Nombre" class="colocar_nombre">Nombre<span class="obligatorio">*</span>
+                </label>
+                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                    placeholder="Escribe tu nombre">
+            </p>
+
+            <p> <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                </label>
+                <input type="email" name="introducir_email" id="email" required="obligatorio"
+                    placeholder="Escribe tu Email">
+            </p>
+            <p>
+                <label for="telefone" class="colocar_telefono">Teléfono
+                </label>
+                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+            </p>
+            <p><label for="asunto" class="colocar_asunto">Asunto <span class="obligatorio">*</span></label>
+                <input type="text" name="introducir_asunto" id="asunto" required="obligatorio"
+                    placeholder="Escribe un asunto">
+            </p>
+            <p><label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                </label>
+                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                    placeholder="Deja aquí tu comentario..."></textarea>
+            </p>
+            <button type="submit" name="enviar_formulario" id="enviar">
+                <p>Enviar</p>
+            </button>
+            <p class="aviso"><span class="obligatorio">*</span>Los campos son obligatorios</p>
+        </form>
+    </div>
+
+    <footer class="piedepagina">
+        <img class="pie_facebook" src="./logongfb.png" alt="facebook">
+        <img class="pie_whatsapp" src="./logowspng.png" alt="WhatsApp">
+        <img class="pie_email" src="./logoemail.png" alt="Email">
+        <p class="pie__foot">Todos los derechos reservados</p>
+        <p class="pie__foot">Diseño Carlaarceg</p>
+    </footer>
+</body>
+
+</html>
