@@ -18,7 +18,7 @@ body {
     font-family: 'Monoton', cursive;
     color: rgb(55, 14, 94);
     padding-inline: 30px;
-    font-size: 110Px;
+    font-size: 80Px;
     letter-spacing: 10px;
     animation: tracking-in-expand 2s cubic-bezier(.215, .61, .355, 1.000) both;
 }
