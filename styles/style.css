@@ -10,19 +10,37 @@
 }
 
 body {
-    background-color: rgba(209, 170, 245, 0.582);
+    background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
 }
+
 
 .text_logo {
     font-family: 'Monoton', cursive;
     color: rgb(55, 14, 94);
     padding-inline: 30px;
-    font-size: 80px;
-    letter-spacing: 5px;
+    font-size: 110Px;
+    letter-spacing: 10px;
+    animation: tracking-in-expand 2s cubic-bezier(.215, .61, .355, 1.000) both;
+}
+
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        opacity: 1
+    }
 }
 
 header {
-    background-color: rgba(255, 160, 122, 0.897);
+    background-color: rgba(255, 160, 122, 0.774);
     display: flex;
     justify-content: space-between;
 }
@@ -30,8 +48,8 @@ header {
 
 .menu {
     list-style-type: none;
-    background-color: lightsalmon;
-    padding: 10px;
+    background-color: rgba(255, 160, 122, 0.658);
+    padding: 20px;
 }
 
 
@@ -45,11 +63,12 @@ header {
 .menu__item a {
     color: rgb(66, 14, 87);
     text-decoration: none;
+    font-size: 25px;
 }
 
 
 .menu__item.active a {
-    text-decoration: underline double;
+    text-decoration: underline;
 }
 
 .bienvenidos h2 {
@@ -69,7 +88,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation:fade-in 2s cubic-bezier(.39,.575,.565,1.000) both;
 }
+
+
+ @keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+
 
 main {
     padding: 40px;
@@ -96,6 +120,8 @@ h2 {
     border-radius: 2rem;
     gap: 2rem;
 }
+
+
 
 .grid__item {
     border-radius: 2rem;
@@ -125,21 +151,93 @@ h2 {
 .grid__item1 {
     grid-area: item1;
     background-image: url("../images_/dibujos/dibus2.jpeg");
+    animation: tilt-in-fwd-tr 1s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+
+@keyframes tilt-in-fwd-tr {
+    0% {
+        transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+        opacity: 1;
+    }
+}
+
+.grid__item .grid__item1 {
+    content: "Murales";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #6654f15e;
+    transform: scale(0);
+    transition: transform .4s;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .grid__item2 {
     grid-area: item2;
     background-image: url("../images_/murales/mural2.jpeg");
+    animation: tilt-in-fwd-tr .6s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+
+@keyframes tilt-in-fwd-tr {
+    0% {
+        transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+        opacity: 1;
+    }
 }
 
 .grid__item3 {
     grid-area: item3;
     background-image: url("../images_/tatu/tatucora.jpeg");
+    animation: tilt-in-fwd-tr .6s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+
+@keyframes tilt-in-fwd-tr {
+    0% {
+        transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+        opacity: 1;
+    }
 }
 
 .grid__item4 {
     grid-area: item4;
     background-image: url("../images_/intervenciones/florescampe1.jpeg");
+    animation: tilt-in-fwd-tr .6s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+
+@keyframes tilt-in-fwd-tr {
+    0% {
+        transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
+        opacity: 1;
+    }
 }
 
 
@@ -192,8 +290,9 @@ h2 {
 }
 
 .container .card:hover {
-    transform: translateY(-15px);
+    transform: translateY(-50px);
     box-shadow: 0 12px 16px rgba (0, 0, 0, 0.2);
+    background-color: violet;
 }
 
 .container .card img {
@@ -263,8 +362,12 @@ h2 {
     background-position: center center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+    animation:fade-in 2s cubic-bezier(.39,.575,.565,1.000) both;
 }
+
+
+ @keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
 .portfolio h2 {
     color: rgb(66, 14, 87);
@@ -303,21 +406,83 @@ h2 {
 .tattoo__item1 {
     grid-area: item1;
     background-image: url("../images_/tatu/tatuflor.jpeg");
+    animation: swing-in-top-fwd 2s cubic-bezier(.175, .885, .32, 1.275) both;
+}
+
+
+
+@keyframes swing-in-top-fwd {
+    0% {
+        transform: rotateX(-800deg);
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateX(0deg);
+        transform-origin: top;
+        opacity: 1;
+    }
 }
 
 .tattoo__item2 {
     grid-area: item2;
     background-image: url("../images_/tatu/tatucora.jpeg");
+    animation: swing-in-top-fwd 3s cubic-bezier(.175, .885, .32, 1.275) both;
+}
+
+@keyframes swing-in-top-fwd {
+    0% {
+        transform: rotateX(-800deg);
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateX(0deg);
+        transform-origin: top;
+        opacity: 1;
+    }
 }
 
 .tattoo__item3 {
     grid-area: item3;
     background-image: url("../images_/tatu/tatuluna.jpeg");
+    animation: swing-in-top-fwd 2s cubic-bezier(.175, .885, .32, 1.275) both;
+}
+
+@keyframes swing-in-top-fwd {
+    0% {
+        transform: rotateX(-800deg);
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateX(0deg);
+        transform-origin: top;
+        opacity: 1;
+    }
 }
 
 .tattoo__item4 {
     grid-area: item4;
     background-image: url("../images_/tatu/tatuvitto_.jpeg");
+    animation: swing-in-top-fwd 3s cubic-bezier(.175, .885, .32, 1.275) both;
+}
+
+@keyframes swing-in-top-fwd {
+    0% {
+        transform: rotateX(-800deg);
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateX(0deg);
+        transform-origin: top;
+        opacity: 1;
+    }
 }
 
 
@@ -332,7 +497,11 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation:fade-in 2s cubic-bezier(.39,.575,.565,1.000) both;
 }
+
+
+ @keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
 .murales h2 {
     color: rgb(66, 14, 87);
@@ -361,6 +530,7 @@ h2 {
     text-align: center;
     padding-inline: 60px;
 }
+
 /* GRID DISEÑO */
 
 
@@ -394,21 +564,66 @@ h2 {
 .gridm__item1 {
     grid-area: item1;
     background-image: url("../images_/murales/mural1.jpeg");
+    animation: fade-in 2s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .gridm__item2 {
     grid-area: item2;
     background-image: url("../images_/murales/mural2.jpeg");
+    animation: fade-in 2s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .gridm__item3 {
     grid-area: item3;
     background-image: url("../images_/murales/mapang.jpeg");
+    animation: fade-in 2s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .gridm__item4 {
     grid-area: item4;
     background-image: url("../images_/murales/lotopared.jpeg");
+    animation: fade-in 2s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .gridpinturas {
@@ -441,21 +656,65 @@ h2 {
 .gridp__item1 {
     grid-area: item1;
     background-image: url("../images_/dibujos/dibus4.jpeg");
+    animation: fade-in 2s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .gridp__item2 {
     grid-area: item2;
     background-image: url("../images_/dibujos/dibus.jpeg");
+    animation: fade-in 2s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .gridp__item3 {
     grid-area: item3;
     background-image: url("../images_/dibujos/dibumostera.jpeg");
+    animation: fade-in 2s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .gridp__item4 {
     grid-area: item4;
     background-image: url("../images_/dibujos/dibus3.jpeg");
+    animation: fade-in 2s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .gridintervenciones {
@@ -488,21 +747,65 @@ h2 {
 .gridin__item1 {
     grid-area: item1;
     background-image: url("../images_/intervenciones/campecustom.jpeg");
+    animation: fade-in 2s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .gridin__item2 {
     grid-area: item2;
     background-image: url("../images_/intervenciones/dibucampe.jpeg");
+    animation: fade-in 2s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .gridin__item3 {
     grid-area: item3;
     background-image: url("../images_/intervenciones/campeflores.jpeg");
+    animation: fade-in 2s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .gridin__item4 {
     grid-area: item4;
     background-image: url("../images_/intervenciones/florescampe.jpeg");
+    animation: fade-in 2s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .gridreciclado {
@@ -535,21 +838,65 @@ h2 {
 .gridr__item1 {
     grid-area: item1;
     background-image: url("../images_/intervenciones/sillon1.jpeg");
+    animation: fade-in 2s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .gridr__item2 {
     grid-area: item2;
     background-image: url("../images_/intervenciones/persihoja.jpeg");
+    animation: fade-in 2s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .gridr__item3 {
     grid-area: item3;
     background-image: url("../images_/intervenciones/ratona.jpeg");
+    animation: fade-in 2s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .gridr__item4 {
     grid-area: item4;
     background-image: url("../images_/intervenciones/rompecabe.jpeg");
+    animation: fade-in 2s cubic-bezier(.39, .575, .565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /*BIO*/
@@ -567,10 +914,39 @@ h2 {
     background-color: darkkhaki;
     padding: 30px;
     border-radius: 10px;
+    animation: flip-in-hor-bottom 2s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+
+@keyframes flip-in-hor-bottom {
+    0% {
+        transform: rotateX(80deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotateX(0);
+        opacity: 1;
+    }
+
 }
 
 .biotitulo {
     font-size: 30px;
+    animation: scale-in-center 1s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+
+@keyframes scale-in-center {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .infobio {
@@ -581,6 +957,20 @@ h2 {
     right: 10px;
     height: 300px;
     line-height: 1.5;
+    animation: slide-in-top .5s cubic-bezier(.25, .46, .45, .94) both;
+}
+
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 /*PAGINA CONTACTO*/
@@ -702,9 +1092,9 @@ p {
 
 @media screen and (max-width: 480px) {
 
-body {
-    background-color: rgba(247, 92, 234, 0.507);
-}
+    body {
+        background-color: rgba(247, 92, 234, 0.507);
+    }
 
     .hero__header {
         flex-direction: column;
@@ -714,6 +1104,7 @@ body {
     .text_logo {
         font-size: 2.6rem;
     }
+
     .menu {
         align-items: flex-start;
         padding-top: 0rem;
@@ -722,12 +1113,12 @@ body {
     }
 
     .imagenPrincipal {
-        
+
         max-width: 100%;
     }
 
     .grid {
-        padding: 0.5rem; 
+        padding: 0.5rem;
         background-color: rgba(189, 140, 235, 0.733);
         border-radius: 2rem;
         gap: 2rem;
@@ -737,7 +1128,7 @@ body {
     .container {
         display: inline;
         gap: 2 rem;
-        }
+    }
 
     .container .card {
         background-color: rgba(255, 127, 80, 0.76);
@@ -753,7 +1144,7 @@ body {
     }
 
     .griddiseno {
-        padding: 0.5rem; 
+        padding: 0.5rem;
         background-color: rgba(189, 140, 235, 0.733);
         border-radius: 2rem;
         gap: 2rem;
@@ -766,7 +1157,7 @@ body {
     }
 
     .gridpinturas {
-        padding: 0.5rem; 
+        padding: 0.5rem;
         background-color: rgba(189, 140, 235, 0.733);
         border-radius: 2rem;
         gap: 2rem;
@@ -779,7 +1170,7 @@ body {
     }
 
     .gridintervenciones {
-        padding: 0.5rem; 
+        padding: 0.5rem;
         background-color: rgba(189, 140, 235, 0.733);
         border-radius: 2rem;
         gap: 2rem;
@@ -792,10 +1183,11 @@ body {
     }
 
     .gridreciclado {
-        padding: 0.5rem; 
+        padding: 0.5rem;
         background-color: rgba(189, 140, 235, 0.733);
         border-radius: 2rem;
-        gap: 2rem;        padding: 0.5rem; 
+        gap: 2rem;
+        padding: 0.5rem;
         background-color: rgba(189, 140, 235, 0.733);
         border-radius: 2rem;
         gap: 2rem;
@@ -809,13 +1201,14 @@ body {
 
     .portadaTattoo {
         background-image: url("../images_/portadaindex.jpeg");
-        }
+    }
 
     .grid__tattoo {
-        padding: 0.5rem; 
+        padding: 0.5rem;
         background-color: rgba(189, 140, 235, 0.733);
         border-radius: 2rem;
-        gap: 2rem;        padding: 0.5rem; 
+        gap: 2rem;
+        padding: 0.5rem;
         background-color: rgba(189, 140, 235, 0.733);
         border-radius: 2rem;
         gap: 2rem;
@@ -828,23 +1221,23 @@ body {
     }
 
 
-.bio {
-    display: inline;
-}
+    .bio {
+        display: inline;
+    }
 
-.fotobio {
-    justify-content: center;
-    margin-left: 2rem;
-}
+    .fotobio {
+        justify-content: center;
+        margin-left: 2rem;
+    }
 
-.infobio {
-    background-color: burlywood;
-    font-size: 1.1rem;
-    padding: 20px;
-    border-radius: 10px;
-    right: 10px;
-    height: 300px;
-    line-height: 1.5;
+    .infobio {
+        background-color: burlywood;
+        font-size: 1.1rem;
+        padding: 20px;
+        border-radius: 10px;
+        right: 10px;
+        height: 300px;
+        line-height: 1.5;
     }
 
     .formulario h1 {
@@ -858,6 +1251,29 @@ body {
         color: rgb(161, 79, 236);
     }
 
+}
 
+//**SECUNDARIA**//
+
+//**ANIMACIONES**//
+
+.tracking-in-expand {
+    animation: tracking-in-expand .7s cubic-bezier(.215, .61, .355, 1.000) both;
+}
+
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -.5em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        opacity: 1
+    }
 
 }
