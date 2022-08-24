@@ -4,61 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Tattoo</title>
 </head>
-<link rel="stylesheet" href="styles/style.css">
-<body>
-    <header class="hero__header">
-        <h1 class="text_logo">Lemon Studio</h1>
-        <nav class="menu">
-            <ul>
-                <li class="menu__item active">
-                    <a href="./inicio.html">Inicio</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./disenos.html">Diseños</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./tattoo.html">Tattoo</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./bio.html">Bio</a>
-                </li>
-                <li class="menu__item">
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <h2 class="bienvenidos">Bienvenidos</h2>
-    <main>
-        <section class="portadaTattoo">
-        </section>
-    </main>
-    <h2 class="portfolio">Portfolio de trabajos realizados</h2>
-     <main>
-        <section class="grid__tattoo">
-        <div class="tattoo__item tattoo__item1">
-            <h4>Flor</h4>
-        </div>
-        <div class="tattoo__item tattoo__item2">
-            <h4>Corazón</h4>
-        </div>
-        <div class="tattoo__item tattoo__item3">
-            <h4>Luna</h4>
-        </div>
-        <div class="tattoo__item tattoo__item4">
-            <h4>Vitto</h4>
-        </div>
-    </section>
-    </main>
 
-    <footer class="piedepagina">
-        <img class="pie_facebook" src="./logongfb.png" alt="facebook">
-        <img class="pie_whatsapp" src="./logowspng.png" alt="WhatsApp">
-        <img class="pie_email" src="./logoemail.png" alt="Email">
+<body class="bg-danger bg-opacity-50">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4 p-sm-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Lemon Studio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="disenos.html">Diseños</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="tattoo.html">Tattoo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bio.html">Bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <h2 class="text-light d-flex bg-danger bg-opacity-50 p-3 rounded-pill">Portfolio</h2>
+    </section>
+    <section>
+        <h4 class="text-light bg-black bg-opacity-75 p-3 aling-items-center justify-content-center d-flex">Algunos
+            trabajos</h4>
+            <section class="container">
+                <div class="row mt-5 gap-5 gap-md-0">
+                    <img class="col-md-4" src="../images_/tatu/tatuflor.jpeg" alt="imagen1">
+                    <img class="col-md-4" src="../images_/tatu/tatucora.jpeg" alt="imagen2">
+                    <img class="col-md-4" src="../images_/tatu/tatuvitto_.jpeg" alt="imagen3">
+                </div>
+            </section>
+            
+
+    <footer class="piedepagina bg-black mt-5">
         <p class="pie__foot">Todos los derechos reservados</p>
         <p class="pie__foot">Diseño Carlaarceg</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 </html>

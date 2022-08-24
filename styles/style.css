@@ -264,7 +264,7 @@ h2 {
 }
 
 
-.container {
+/* .container {
     width: 100%;
     max-width: 1200px;
     height: 430px;
@@ -273,17 +273,17 @@ h2 {
     justify-content: center;
     margin: auto;
     flex-direction: row;
-}
+} */
 
-.container {
+/* .container {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
 
-.container .card {
+/* .container .card {
     width: 330px;
     height: 430px;
     background-color: rgba(209, 170, 245, 0.733);
@@ -293,7 +293,7 @@ h2 {
     margin: 20px;
     text-align: center;
     transition: all 0.25s;
-}
+} */
 
 .container .card:hover {
     transform: translateY(-50px);
@@ -301,12 +301,12 @@ h2 {
     background-color: violet;
 }
 
-.container .card img {
+/* .container .card img {
     width: 330px;
     height: 220px;
-}
+} */
 
-.container .card h4 {
+/* .container .card h4 {
     font-weight: 500;
     font-size: 2rem;
 }
@@ -316,7 +316,7 @@ h2 {
     font-size: 16px;
     font-weight: 300;
     color: black;
-}
+} */
 
 
 
@@ -360,7 +360,7 @@ h2 {
 
 /*PAGINA TATTOO*/
 
-.portadaTattoo {
+/* .portadaTattoo {
     height: 140vh;
     background-image: url("../images_/tatu_portada.jpeg");
     background-repeat: no-repeat;
@@ -489,21 +489,19 @@ h2 {
         transform-origin: top;
         opacity: 1;
     }
-}
+} */
 
 
 /*PAGINA DISEÑOS*/
 
-.portadadisenos {
-    height: 140vh;
-    background-image: url("../images_/murales_portada.jpeg");
-    background-repeat: no-repeat;
+.hero__diseno {
+    background-image: url(../images_/fondo1.jpg);
+    height: 90vh;
     background-size: cover;
     background-position: center center;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation:fade-in 2s cubic-bezier(.39,.575,.565,1.000) both;
 }
 
 
