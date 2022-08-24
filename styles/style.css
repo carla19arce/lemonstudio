@@ -9,10 +9,16 @@
     font-family: 'Oswald', sans-serif;
 }
 
-body {
-    background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
-}
 
+.hero {
+    background-image: url(../images_/fondo1.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .text_logo {
     font-family: 'Monoton', cursive;
@@ -71,15 +77,15 @@ header {
     text-decoration: underline;
 }
 
-.bienvenidos h2 {
+/* .bienvenidos h2 {
     color: blueviolet;
     background-color: lightsalmon;
     text-align: center;
     padding-inline: 60px;
-}
+} */
 
 
-.imagenPrincipal {
+/* .imagenPrincipal {
     height: 140vh;
     background-image: url("../images_/portadaindex.jpeg");
     background-repeat: no-repeat;
@@ -89,10 +95,10 @@ header {
     justify-content: center;
     align-items: center;
     animation:fade-in 2s cubic-bezier(.39,.575,.565,1.000) both;
-}
+} */
 
 
- @keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+ /* @keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
 
 main {
@@ -104,9 +110,9 @@ h2 {
     background-color: rgba(233, 84, 84, 0.486);
     text-align: center;
     padding-inline: 60px;
-}
+} */
 
-/* GRID */
+/* GRID
 
 .grid {
     padding: 6rem;
@@ -119,17 +125,17 @@ h2 {
     background-color: rgba(209, 170, 245, 0.582);
     border-radius: 2rem;
     gap: 2rem;
-}
+} */
 
 
 
-.grid__item {
+/* .grid__item {
     border-radius: 2rem;
     background-size: cover;
     background-position: center center;
-}
+} */
 
-.grid__item h5 {
+/* /* .grid__item h5 {
     color: black;
     font-family: 'Oswald', sans-serif;
     font-size: 1rem;
@@ -137,18 +143,18 @@ h2 {
     text-align: end;
     margin-top: 220px;
     padding-right: 1rem;
-}
+} */
 
-.grid__item h4 {
+/* .grid__item h4 {
     color: black;
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
     font-weight: 600;
     text-align: start;
     padding-left: 1rem;
-}
+} */
 
-.grid__item1 {
+/* .grid__item1 {
     grid-area: item1;
     background-image: url("../images_/dibujos/dibus2.jpeg");
     animation: tilt-in-fwd-tr 1s cubic-bezier(.25, .46, .45, .94) both;
@@ -165,9 +171,9 @@ h2 {
         transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
         opacity: 1;
     }
-}
+} */
 
-.grid__item .grid__item1 {
+/* .grid__item .grid__item1 {
     content: "Murales";
     position: absolute;
     top: 0;
@@ -181,9 +187,9 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.grid__item2 {
+/* .grid__item2 {
     grid-area: item2;
     background-image: url("../images_/murales/mural2.jpeg");
     animation: tilt-in-fwd-tr .6s cubic-bezier(.25, .46, .45, .94) both;
@@ -238,7 +244,7 @@ h2 {
         transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
         opacity: 1;
     }
-}
+} */
 
 
 /**CARDS**/
@@ -349,7 +355,7 @@ h2 {
 }
 
 .piedepagina .pie__foot {
-    color: rgb(55, 24, 85);
+    color: white;
 }
 
 /*PAGINA TATTOO*/
